@@ -1,13 +1,15 @@
+"use strict";
 var money, time;
 money = +(prompt("Ваш бюджет на месяц?", "1000"));
-time = prompt("Введите дату в формате YYYY-MM-DD", "2019-04-12")
+time = prompt("Введите дату в формате YYYY-MM-DD", "2019-04-12");
 var appData = {
     budjet: money,
     timeDate: time,
     expenses: {},
     optionalExpenses: [],
     income: [],
-    savings: false
+    savings: false,
+    myFlag: true
 }
 let q1 = prompt('Введите обязательную статью расходов в этом месяце');
 let q2 = prompt('Во сколько обойдется?');
