@@ -23,16 +23,20 @@ circle[2].style.backgroundColor = "green";
 let div = document.createElement("div"),
     text = document.createTextNode("пример текста");
 
-div.classList.add("green");
+div.classList.add("black");
+
+// div.innerHTML = "<h2>Hello World!</h2>";
+div.textContent = "<h2>Hello World!</h2>"
+
 
 document.body.appendChild(div);
 
-console.log(wrapper);
+console.log(document.URL); 
 
 wrapper.appendChild(div);
 document.body.insertBefore(div, circle[0]);
 document.body.removeChild(circle[1]);
 wrapper.removeChild(heart[1]);
-document.body.replaceWith(btn[0], circle[1]);
+document.body.replaceChild(btn[1], circle[1]);
 
 console.log(div);    
